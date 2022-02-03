@@ -76,8 +76,8 @@ removeItem.addEventListener('click',() => {
     let showDiv = document.getElementById('list');
     let divAlert = document.createElement('div');
     let label = document.createElement('label');
-    label.innerHTML= 'Acaba de eliminar el elemento '+index;
-    divAlert.classList.add('alert', 'alert-danger'); //clase de la alerta
+    setTimeout(function(){ alert("Eliminó el elemento:"+index); }, 0100);
+    
 
     items[index].parentNode.removeChild(items[index]);
     divAlert.appendChild(label);
